@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>WeChat</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<description></description>
+		<display-name>WeixinServlet</display-name>
+		<servlet-name>WeixinServlet</servlet-name>
+		<servlet-class>com.imooc.servlet.WeixinServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>WeixinServlet</servlet-name>
+		<url-pattern>/wx.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>RegServlet</servlet-name>
+		<servlet-class>servlet.RegServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegServlet</servlet-name>
+		<url-pattern>/servlet/RegServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<description></description>
+		<display-name>LogServlet</display-name>
+		<servlet-name>LogServlet</servlet-name>
+		<servlet-class>servlet.LogServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogServlet</servlet-name>
+		<url-pattern>/servlet/LogServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<description>This is the description of my J2EE component</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>demo</servlet-name>
+		<servlet-class>servlet.demo</servlet-class>
+	</servlet>
+	<!-- 卖方添加信息的Servlet -->
+	<servlet>
+		<description>买方添加信息处理的Servlet</description>
+		<display-name>maifangServlet</display-name>
+		<servlet-name>SellerServlet</servlet-name>
+		<servlet-class>servlet.SellerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SellerServlet</servlet-name>
+		<url-pattern>/servlet/SellerServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 卖方添加信息的Servlet -->
+	
+	<!-- 买方执行查询功能处理的Servlet -->
+	<servlet>
+		<description>买方执行查询功能处理的Servlet</description>
+		<display-name>This is the display name of my J2EE component</display-name>
+		<servlet-name>BuyServlet</servlet-name>
+		<servlet-class>servlet.BuyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BuyServlet</servlet-name>
+		<url-pattern>/servlet/BuyServlet</url-pattern>
+	</servlet-mapping>
+	<!-- 买方执行查询功能处理的Servlet -->
+
+	<servlet-mapping>
+		<servlet-name>demo</servlet-name>
+		<url-pattern>/servlet/demo</url-pattern>
+	</servlet-mapping>
+	<!-- 买方注册想买图书处理的Servlet -->
+	<servlet>
+		<description></description>
+		<display-name>BuyerServlet</display-name>
+		<servlet-name>BuyerServlet</servlet-name>
+		<servlet-class>servlet.BuyerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BuyerServlet</servlet-name>
+		<url-pattern>/servlet/BuyerServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
